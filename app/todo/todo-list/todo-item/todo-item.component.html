@@ -1,0 +1,10 @@
+<div class="item" data="2">
+    <div class="item-info info_chung">
+        <p class="name-item">{{ items.name }}</p>
+        <span class="status" [ngClass]="{'yellow-background': !items.type, 'green-background': items.type}" (click)="updateStatus()">{{ getStatusText(items.type) }}</span>
+    </div>
+    <div class="info-option info_chung">
+        <div class="item-edit" (click)="editItem()">Edit</div>
+        <div class="item-delete" (click)="deleteItem()">Delete</div>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+<div class="main">
+    <div class="main-border">
+        <div class="header">
+            <div class="header-filter">
+                <button type="submit" class="filter-all btn_chung" [class.active]="selectedFilter === enumFilter.all" (click)="filter(enumFilter.all)">{{enumFilter.all}}</button>
+                <button type="submit" class="filter-active btn_chung" [class.active]="selectedFilter === enumFilter.active" (click)="filter(enumFilter.active)">{{enumFilter.active}}</button>
+                <button type="submit" class="filter-completed btn_chung" [class.active]="selectedFilter === enumFilter.completed" (click)="filter(enumFilter.completed)">{{enumFilter.completed}}</button>
+            </div>
+            <div class="header-add">
+                <button type="submit" class="add-item btn_chung active" (click)="add()">Add</button>
+            </div>
+        </div>
+        
+        <app-todo-list [showItem]="filterTodo" (clickShowDialog)="edit($event)" (deleteItem)="delete($event)" (clickStatus)="clickStatus($event)"></app-todo-list>
+    </div>
+</div>
+
+<app-todo-dialog [showDialog]="showDialog" (onClose)="close()" [inputForm]="inputForm" (onSubmit)="submitForm($event)" [isEdit]="isEdit"></app-todo-dialog>

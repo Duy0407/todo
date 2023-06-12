@@ -1,0 +1,21 @@
+<div class="popup" [style.display]="showDialog ? 'block' : 'none'">
+    <div class="popup_padding">
+        <div class="popup_title">
+            <h1>{{isEdit ? 'Edit' : 'Add'}} item</h1>
+            <span (click)="closeDialog()">X</span>
+        </div>
+
+        <form #myForm="ngForm" [formGroup]="inputForm">
+            <div class="popup_input">
+                <div class="popup_input-text input_chung">
+                    <input formControlName="itemName" type="text" name="itemName" required>
+                </div>
+                <div class="popup_input-date input_chung">
+                    <input formControlName="itemDate" type="date" name="itemDate" required>
+                </div>
+            </div>
+    
+            <button type="submit" class="popup_btn" (click)="handledSubmit(inputForm)">{{isEdit ? 'Edit' : 'Add'}}</button>
+        </form>
+    </div>
+</div>

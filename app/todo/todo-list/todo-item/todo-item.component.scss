@@ -1,0 +1,10 @@
+.item{border: 1px solid #CCC; border-radius: 8px; display: flex;justify-content: space-between;padding: 10px 8px;align-items: center; cursor: pointer; margin-bottom: 8px;}
+.info_chung{display: flex;align-items: center;line-height: 18px;}
+.name-item{margin-right: 10px;}
+.status{font-size: 10px;color: #FFF;padding: 0 4px;border-radius: 8px;}
+.info-option{text-align: center;}
+.item-edit{cursor: pointer; background: #CCC;padding: 2px 8px; margin-right: 10px;border-radius: 8px;}
+.item-delete{cursor: pointer; background: #CCC;padding: 2px 8px; border-radius: 8px;}
+
+.green-background{background: green;}
+.yellow-background{background: yellow;}

@@ -1,0 +1,18 @@
+.main-border{
+    border: 2px solid #000;
+    width: 500px;
+    height: 330px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+.form{width: 100%;display: flex; justify-content: space-between;margin: 20px 0;}
+.form-input {
+    width: 80%;
+}
+.header{display: flex; justify-content: space-between;margin-bottom: 20px;}
+.form-input input{width: 100%;padding: 8px;border-radius: 8px;outline: none;}
+.btn_chung{cursor: pointer;border-radius: 8px;border: none;padding: 8px 10px;margin-right: 10px;}
+.btn_chung:last-child{margin-right: 0;}
+.active{color: #FFF; background: green;}
+

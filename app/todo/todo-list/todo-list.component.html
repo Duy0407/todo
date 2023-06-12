@@ -1,0 +1,3 @@
+<div class="show-item">
+    <app-todo-item *ngFor="let item of showItem" [items]="item" (handleEdit)="handleEdit($event)" (handleDelete)="handleDelete($event)" (handleStatus)="handleStatus($event)"></app-todo-item>
+</div>  

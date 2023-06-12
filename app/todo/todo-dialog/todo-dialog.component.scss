@@ -1,0 +1,27 @@
+.popup{
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+}
+.popup_padding{
+    width: 500px;
+    padding: 10px;
+    height: auto;
+    border-radius: 8px;
+    background: #FFF;
+    margin: 40px auto 0;
+}
+.popup_title{display: flex; justify-content: space-between;}
+.popup_title span{
+    cursor: pointer;
+    height: 19px;
+    font-size: 18px;
+    margin-right: 10px;
+}
+.input_chung{margin: 10px 0;}
+.input_chung input{width: 100%;padding: 8px 10px;border-radius: 8px;outline: none;}
+.popup_btn{padding: 8px 10px;border-radius: 8px; border: none; background: green; color: #FFF;cursor: pointer;}
